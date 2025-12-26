@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:'Orbitron',sans-serif;
+background:linear-gradient(135deg,#040412,#0a1633,#020024);
+color:#fff;
+min-height:100vh;
+}
+
+header{
+padding:120px 20px;
+text-align:center;
+background:radial-gradient(circle at top,#1b3cff,transparent 70%);
+}
+
+.logo{
+font-size:72px;
+font-weight:800;
+letter-spacing:8px;
+animation:neon 3s infinite alternate;
+}
+
+@keyframes neon{
+from{text-shadow:0 0 10px #4da6ff;}
+to{text-shadow:0 0 25px #4da6ff,0 0 60px #1a75ff;}
+}
+
+.subtitle{
+margin-top:20px;
+font-size:22px;
+opacity:.85;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:40px;
+margin:40px 0;
+}
+
+nav a{
+color:#4da6ff;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#fff;
+text-shadow:0 0 10px #4da6ff;
+}
+
+.section{
+max-width:1200px;
+margin:70px auto;
+padding:50px;
+background:rgba(255,255,255,.05);
+border-radius:25px;
+backdrop-filter:blur(10px);
+}
+
+.section h2{
+text-align:center;
+font-size:36px;
+margin-bottom:35px;
+color:#4da6ff;
+}
+
+.center-text{
+text-align:center;
+font-size:19px;
+line-height:1.9;
+opacity:.95;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.feature{
+background:rgba(0,0,0,.4);
+padding:30px;
+border-radius:20px;
+border-left:4px solid #4da6ff;
+}
+
+.feature h3{
+margin-bottom:15px;
+font-size:22px;
+}
+
+.rules-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.rule{
+background:rgba(0,0,0,.45);
+padding:28px;
+border-radius:18px;
+border-left:4px solid #4da6ff;
+}
+
+.rule h3{
+margin-bottom:15px;
+font-size:21px;
+}
+
+.rule p{
+line-height:1.7;
+font-size:15.5px;
+opacity:.9;
+}
+
+.status-box{
+text-align:center;
+font-size:22px;
+padding:25px;
+border-radius:18px;
+background:rgba(0,0,0,.4);
+margin-top:30px;
+}
+
+.ip-box{
+margin-top:30px;
+text-align:center;
+}
+
+.ip{
+font-size:24px;
+color:#4da6ff;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:35px;
+opacity:.6;
+font-size:14px;
+}

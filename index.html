@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Criolанд</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">CRIOLAND</div>
+<div class="subtitle">Minecraft сервер нового уровня</div>
+</header>
+
+<nav>
+<a href="index.html">Главная</a>
+<a href="rules.html">Правила</a>
+<a href="shop.html">Магазин</a>
+</nav>
+
+<div class="section">
+<h2>О проекте</h2>
+<p class="center-text">
+Crioland — это современный Minecraft сервер с честной игрой,
+стабильной работой и регулярными обновлениями.
+Проект создан для игроков, которые ценят комфорт,
+атмосферу и развитие без донатного дисбаланса.
+</p>
+
+<div class="features">
+<div class="feature">
+<h3>Режимы игры</h3>
+<p>Выживание, PvP-зоны, ивенты и уникальные механики.</p>
+</div>
+
+<div class="feature">
+<h3>Стабильность</h3>
+<p>Сервер работает 24/7 с высокой производительностью.</p>
+</div>
+
+<div class="feature">
+<h3>Обновления</h3>
+<p>Постоянное развитие и новые возможности для игроков.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Статус сервера</h2>
+<div class="status-box" id="status">Загрузка данных...</div>
+
+<div class="ip-box">
+<p>IP сервера:</p>
+<div class="ip" onclick="copyIP()">mc.crioland.ru</div>
+</div>
+</div>
+
+<footer>
+© 2025 CRIOLAND • Все права защищены
+</footer>
+
+<script src="status.js"></script>
+<script>
+function copyIP(){
+navigator.clipboard.writeText("mc.crioland.ru");
+}
+</script>
+
+</body>
+</html>
